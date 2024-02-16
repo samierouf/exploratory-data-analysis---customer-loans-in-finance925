@@ -24,13 +24,13 @@ git clone https://github.com/samierouf/exploratory-data-analysis---customer-loan
 To run this code or recreate something similar, install the prerequisites. Once everything is downloaded/installed, create an environment, a local repository, and clone the repo. Run the main.py file to automatically extract, clean, and upload data from various sources to the sales_data database on your localhost.
 
 ## Project information
-### data_transformation.py
-### dataframe_transformation.py
-### db_utils.py
-### information.py
-### plotter.py
-### data_visualisation.ipynb
-### main.ipynb
+  - ### data_transformation.py
+  - ### dataframe_transformation.py
+  - ### db_utils.py
+  - ### information.py
+  - ### plotter.py
+  - ### data_visualisation.ipynb
+  - ### main.ipynb
 
 ## Project information
 ### data_transformation.py
