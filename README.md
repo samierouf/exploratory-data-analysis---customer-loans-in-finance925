@@ -2,6 +2,12 @@
 
 The aim of this project is to practice exploratory data analysis on a customer loan dataset based in AWS using data visulisation and other methods to clean the data and preform statistical analyisis on the data set to then be able to preform querries to get an insight of the data.
 
+## Prerequisites
+- AWS account
+- Python 3.11
+- Java 8
+- Download versions from the 'requirements.txt' file
+
 ## Installation
 ```bash
 pip install -r requirements.txt
@@ -10,7 +16,7 @@ pip install -r requirements.txt
 ## Clonening the repo
 using the folwing clone the repo
 ```bash
-git clone https://github.com/samierouf/multinational-retail-data-centralisation68.git
+git clone https://github.com/samierouf/exploratory-data-analysis---customer-loans-in-finance925.git
 ```
 
 ## Usage
