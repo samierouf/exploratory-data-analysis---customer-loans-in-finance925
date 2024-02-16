@@ -4,7 +4,20 @@ import pandas as pd
 from sqlalchemy import create_engine
 from sqlalchemy import inspect
 import psycopg2
+
 class RDSDatabaseConnector:
+    
+    '''
+    A class for connecting to a PostgreSQL database.
+
+    Methods:
+        read_credentials(): reads database credentials from a YAML file.
+        __init__(): self.creds = self.read_credentials(), self.engine = self.init_db_engine()
+        init_db_engine(): initializes a database engine using the provided credentials.
+        read_rds_table(table_name): lists the tables present in the connected database.
+        save_to_csv(data, file_name): saves a file to csv format
+        read_csv_data(file_name): reads a csv file.
+    '''
 
     def read_credentials(self):
         '''
@@ -12,6 +25,7 @@ class RDSDatabaseConnector:
         
         Args:
             n/a
+            
         Returns:
             dict: dicionary containg the contents of the credential.yaml file
         '''
@@ -56,15 +70,29 @@ class RDSDatabaseConnector:
         return read_data   
 
     def save_to_csv(self, data, file_name):
+        '''
+        Save the DataFrame to a CSV file.
+
+        Args:
+            data (pd.DataFrame): The DataFrame to be saved.
+            file_name (str): The name of the CSV file to save to.
+
+        Returns:
+            None
+        '''
         data.to_csv(file_name, index=False)
     
-
     def read_csv_data(self, file_name):
+        '''
+        Read data from a CSV file and return it as a DataFrame.
+
+        Args:
+            file_name (str): The name of the CSV file to read from.
+
+        Returns:
+            pd.DataFrame: The DataFrame containing the data from the CSV file.
+        '''
         data = pd.read_csv(file_name)
         return data
 
     
-
-
-
-
